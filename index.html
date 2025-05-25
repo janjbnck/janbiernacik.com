@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jan Biernacik</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Tech enthusiast and self-taught web developer">
+        <meta name="keywords" content="Jan Biernacik, Web Development, Programming, Software, Multilingual Site">
+        <meta name="author" content="Jan Biernacik">
+
+        <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
+        <link rel="shortcut icon" href="/assets/media/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Jan Biernacik" />
+        <link rel="manifest" href="/assets/media/site.webmanifest" />
+
+        <link rel="alternate" hreflang="en" href="https://janbiernacik.com/en" />
+        <link rel="alternate" hreflang="de" href="https://janbiernacik.com/de" />
+        <link rel="alternate" hreflang="x-default" href="https://janbiernacik.com" />
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    <body>
+        <script>
+            const userLang = navigator.language
+            switch(userLang) {
+                case "de":
+                case "de-AT":
+                case "de-BE":
+                case "de-CH":
+                case "de-DE":
+                case "de-IT":
+                case "de-LI":
+                case "de-LU":
+                    window.location.href = "/de";
+                    break;
+                default:
+                    window.location.href = "/en";
+                    break;
+            }
+        </script>
+    </body>
+</html>
