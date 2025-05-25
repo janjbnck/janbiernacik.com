@@ -48,7 +48,7 @@ p {
     margin: var(--spacing-small) 0;
 }
 
-b {
+strong, b {
     color: var(--color-highlight);
 }
 
@@ -62,5 +62,6 @@ li {
 }
 
 a:hover {
+    color: var(--color-text);
     text-decoration: none;
 }

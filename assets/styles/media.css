@@ -1,0 +1,36 @@
+@media screen and (max-width: 400px) {
+    h1, .banner-title, .page-header-back-button a {
+        font-size: x-large;
+    }
+    h2 {
+        font-size: larger;
+    }
+    h3 {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .banner-title {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .banner {
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .banner-items {
+        width: 100%;
+    }
+    .banner-image {
+        width: 20%;
+        margin-right: var(--spacing-normal);
+    }
+}
+@media screen and (max-width: 320px) {
+    .banner-image {
+        display: none;
+    }
+}

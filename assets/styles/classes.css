@@ -21,3 +21,29 @@
     margin-left: var(--spacing-normal);
     width: 100%;
 }
+
+.banner {
+    margin-top: var(--spacing-normal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-title {
+    margin-bottom: var(--spacing-small);
+    line-height: 1.1;
+}
+.banner-description {
+    margin-top: 0;
+    margin-bottom: var(--spacing-normal);
+}
+.banner-image {
+    margin: var(--spacing-large) 0;
+    max-width: 250px;
+}
+.banner-social-icon-wrapper {
+    padding-bottom: var(--spacing-normal);
+}
+.banner-social-icon {
+    font-size: x-large;
+    margin-right: var(--spacing-small);
+}
