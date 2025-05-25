@@ -1,0 +1,7 @@
+.link-block {
+    display: block;
+    width: fit-content;
+}
+.link-no-text-decoration {
+    text-decoration: none;
+}
