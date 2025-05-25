@@ -5,3 +5,19 @@
 .link-no-text-decoration {
     text-decoration: none;
 }
+
+.page-header {
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+}
+.page-header-back-button {
+    width: fit-content;
+}
+.page-header-back-button a {
+    font-size: xx-large;
+}
+.page-header-title {
+    margin-left: var(--spacing-normal);
+    width: 100%;
+}
