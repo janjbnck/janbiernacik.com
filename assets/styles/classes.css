@@ -1,8 +1,7 @@
 /* Sections */
 .section {
-    padding: var(--spacing-normal) 0;
-    margin: var(--spacing-normal) 0;
-    margin-bottom: var(--spacing-large) !important;
+    margin: var(--spacing-large) 0;
+    display: flow-root;
 }
 .section h2 {
     border-bottom: 1px solid var(--color-border);
@@ -11,10 +10,10 @@
     background: var(--color-background-alt);
     border: 1px solid var(--color-border);
     border-radius: 4px;
-    padding: var(--spacing-normal) !important;
+    padding: var(--spacing-normal);
 }
 .section-alt h2 {
-    border-bottom: none !important;
+    border-bottom: none;
     margin: var(--spacing-small) 0;
 }
 
@@ -32,6 +31,7 @@
     display: flex;
     justify-content: space-around;
     align-items:baseline;
+    margin-bottom: var(--spacing-large);
 }
 .page-header-back-button {
     width: fit-content;
@@ -46,6 +46,8 @@
 
 /* Banner */
 .banner {
+    margin: 0;
+    padding: var(--spacing-normal) 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +61,6 @@
     margin-bottom: var(--spacing-normal);
 }
 .banner-image {
-    margin: var(--spacing-large) 0;
     max-width: 250px;
 }
 .banner-social-icon-wrapper {
