@@ -14,6 +14,7 @@
     padding: var(--spacing-normal) !important;
 }
 .section-alt h2 {
+    border-bottom: none !important;
     margin: var(--spacing-small) 0;
 }
 
@@ -91,4 +92,28 @@
 .timeline-item-title {
     margin: 0;
     padding: 0;
+}
+
+/* GitHub Repos */
+.repo-item-wrapper {
+    text-decoration: none;
+} 
+.repo-item {
+    background-color: var(--color-background-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    margin-bottom: var(--spacing-small);
+    padding: 0 var(--spacing-normal);
+    transition: background-color .1s;
+}
+.repo-item:hover {
+    background-color: var(--color-border);
+}
+.repo-item-title {
+    margin-top: var(--spacing-normal);
+    margin-bottom: var(--spacing-small);
+}
+.repo-item-description {
+    margin-top: var(--spacing-small);
+    margin-bottom: var(--spacing-normal);
 }

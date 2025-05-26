@@ -33,6 +33,11 @@ main, footer {
     padding: var(--spacing-normal);
 }
 
+footer {
+    margin-bottom: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'IBM Plex Mono';
     color: var(--color-title);
