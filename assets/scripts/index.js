@@ -76,6 +76,7 @@ function loadHeader() {
         }
         if ($("#menu").length) {
             $("#menu").html(`
+                <div onclick="toggleMenu();" id="menu-closer"></div>
                 <ul id="menu-items">
                     <li><a href="${content.homeUrl}" class="menu-link">${content.home}</a></li>
                     <li><a href="${content.projectUrl}" class="menu-link">${content.projects}</a></li>
