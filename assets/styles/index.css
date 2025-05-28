@@ -15,6 +15,7 @@
     --spacing-large: 40px;
     --spacing-larger: 60px;
     --spacing-x-large: 80px;
+    --spacing-xx-large: 100px;
 }
 
 * {
@@ -30,7 +31,7 @@
 
 body {
     background-color: var(--color-background);
-    padding: var(--spacing-x-large) var(--spacing-normal) var(--spacing-large) var(--spacing-normal);
+    padding: var(--spacing-xx-large) var(--spacing-normal) var(--spacing-large) var(--spacing-normal);
 }
 
 main, footer {
