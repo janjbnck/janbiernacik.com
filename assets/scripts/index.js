@@ -39,7 +39,6 @@ function loadHeader() {
             home: "Startseite",
             homeUrl: "/de",
             projects: "Projekte",
-            projectUrl: "https://github.com/janjbnck?tab=repositories",
             about: "Über mich",
             aboutUrl: "/de/about",
             contact: "Kontakt",
@@ -50,7 +49,6 @@ function loadHeader() {
             home: "Home",
             homeUrl: "/en",
             projects: "Projects",
-            projectUrl: "https://github.com/janjbnck?tab=repositories",
             about: "About Me",
             aboutUrl: "/en/about",
             contact: "Contact",
@@ -78,7 +76,7 @@ function loadHeader() {
                 </div>
                 <div class="navbar-items navbar-items-center">
                     <a href="${content.homeUrl}" class="navbar-link">${content.home}</a>
-                    <a href="${content.projectUrl}" class="navbar-link">${content.projects}</a>
+                    <a href="https://github.com/janjbnck?tab=repositories" class="navbar-link">${content.projects}</a>
                     <a href="${content.aboutUrl}" class="navbar-link">${content.about}</a>
                     <a href="${content.contactUrl}" class="navbar-link">${content.contact}</a>
                 </div>
@@ -97,6 +95,47 @@ function loadHeader() {
                     <li><a href="${content.aboutUrl}" class="menu-link">${content.about}</a></li>
                     <li><a href="${content.contactUrl}" class="menu-link">${content.contact}</a></li>
                 </ul>
+            `);
+        }
+    });
+}
+
+function loadFooter() {
+    const headerContent = {
+        contentDE: {
+            privacy: "Datenschutzerklärung",
+            privacyUrl: "/de/privacy",
+            source: "Quellcode",
+            langSwitch: "English Version",
+            langSwitchUrl: "/en"
+        },
+        contentEN: {
+            privacy: "Privacy Policy",
+            privacyUrl: "/en/privacy",
+            source: "Source Code",
+            langSwitch: "Deutsche Version",
+            langSwitchUrl: "/de"
+        }
+    }
+
+    let content;
+    if (document.documentElement.lang === "de") {
+        content = headerContent.contentDE;
+    } else {
+        content = headerContent.contentEN;
+    }
+
+    let currentPath = window.location.pathname;
+    currentPath = currentPath.substring(3);
+    content.langSwitchUrl = content.langSwitchUrl + currentPath;
+
+    $(function() {
+        if ($("footer").length) {
+            $("footer").html(`
+                <a class="link-block" href="${content.privacyUrl}">${content.privacy}</a>
+                <a class="link-block" href="https://github.com/janjbnck/janbiernacik.com">${content.source}</a>
+                <a class="link-block" href="${content.langSwitchUrl}">${content.langSwitch}</a>
+                <p><i class="bi bi-c-circle"></i> 2025 Jan Biernacik</p>
             `);
         }
     });
