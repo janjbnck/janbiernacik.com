@@ -40,6 +40,8 @@ function loadHeader() {
             homeUrl: "/de",
             projects: "Projekte",
             projectUrl: "https://github.com/janjbnck?tab=repositories",
+            about: "Über mich",
+            aboutUrl: "/de/about",
             contact: "Kontakt",
             contactUrl: "mailto:jan@biernacik.dev",
             langSwitchUrl: "/en"
@@ -49,6 +51,8 @@ function loadHeader() {
             homeUrl: "/en",
             projects: "Projects",
             projectUrl: "https://github.com/janjbnck?tab=repositories",
+            about: "About Me",
+            aboutUrl: "/en/about",
             contact: "Contact",
             contactUrl: "mailto:jan@biernacik.dev",
             langSwitchUrl: "/de"
@@ -75,6 +79,7 @@ function loadHeader() {
                 <div class="navbar-items navbar-items-center">
                     <a href="${content.homeUrl}" class="navbar-link">${content.home}</a>
                     <a href="${content.projectUrl}" class="navbar-link">${content.projects}</a>
+                    <a href="${content.aboutUrl}" class="navbar-link">${content.about}</a>
                     <a href="${content.contactUrl}" class="navbar-link">${content.contact}</a>
                 </div>
                 <div class="navbar-items navbar-items-right">
@@ -89,6 +94,7 @@ function loadHeader() {
                 <ul id="menu-items">
                     <li><a href="${content.homeUrl}" class="menu-link">${content.home}</a></li>
                     <li><a href="${content.projectUrl}" class="menu-link">${content.projects}</a></li>
+                    <li><a href="${content.aboutUrl}" class="menu-link">${content.about}</a></li>
                     <li><a href="${content.contactUrl}" class="menu-link">${content.contact}</a></li>
                 </ul>
             `);

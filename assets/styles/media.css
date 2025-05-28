@@ -37,6 +37,9 @@
     #menu-button {
         display: block;
     }
+    .horizontal-list span {
+        white-space: nowrap;
+    }
 }
 @media screen and (max-width: 320px) {
     .banner-image {
