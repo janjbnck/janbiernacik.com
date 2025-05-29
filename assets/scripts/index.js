@@ -91,7 +91,7 @@ function loadHeader() {
                 <div onclick="toggleMenu();" id="menu-closer"></div>
                 <ul id="menu-items">
                     <li><a href="${content.homeUrl}" class="menu-link">${content.home}</a></li>
-                    <li><a href="${content.projectUrl}" class="menu-link">${content.projects}</a></li>
+                    <li><a href="https://github.com/janjbnck?tab=repositories" class="menu-link">${content.projects}</a></li>
                     <li><a href="${content.aboutUrl}" class="menu-link">${content.about}</a></li>
                     <li><a href="${content.contactUrl}" class="menu-link">${content.contact}</a></li>
                 </ul>
