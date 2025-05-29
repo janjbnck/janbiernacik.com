@@ -46,6 +46,9 @@
     height: fit-content;
     z-index: 2;
 }
+#menu-items li {
+    margin-bottom: var(--spacing-x-small);
+}
 #menu-button {
     display: none;
     cursor: pointer;
@@ -81,7 +84,6 @@
 .menu-link {
     font-size: large;
     text-decoration: none;
-    margin: var(--spacing-x-small) 0;
 }
 .menu-link:hover {
     text-decoration: underline;
