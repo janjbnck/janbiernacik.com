@@ -1,4 +1,6 @@
 module.exports = async function(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy('src/robots.txt');
+    eleventyConfig.addPassthroughCopy('src/sitemap.xml');
     eleventyConfig.addPassthroughCopy('src/assets');
     eleventyConfig.addWatchTarget('src/assets');
 
@@ -21,6 +23,5 @@ module.exports = async function(eleventyConfig) {
         input: "src",
         output: "public"
         }
-
     };
 };
