@@ -1,0 +1,85 @@
+---
+domain: janbiernacik.com
+titlePrefix: Jan Biernacik
+keywordsPrefix: Jan Biernacik, Webentwicklung, Programmierung, Software,
+author: Jan Biernacik
+
+privacyPolicyUrl: /de/privacy
+sourceCodeUrl: https://github.com/janjbnck/janbiernacik.com
+---
+
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>{{ titlePrefix }} - {{ title }}</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="{{ description }}">
+        <meta name="keywords" content="{{ keywordsPrefix }} {{ keywords }}">
+        <meta name="author" content="{{ author }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <script src="/assets/scripts/jquery.js"></script>
+        <script src="/assets/scripts/index.js"></script>
+        <link rel="stylesheet" href="/assets/styles/fonts.css" />
+        <link rel="stylesheet" href="/assets/styles/index.css" />
+        <link rel="stylesheet" href="/assets/styles/classes.css" />
+        <link rel="stylesheet" href="/assets/styles/ids.css" />
+        <link rel="stylesheet" href="/assets/styles/media.css" />
+
+        <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
+        <link rel="shortcut icon" href="/assets/media/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="{{ titlePrefix }}" />
+        <link rel="manifest" href="/assets/media/site.webmanifest" />
+
+        <link rel="alternate" hreflang="en" href="https://{{ domain }}/en{{ path }}" />
+        <link rel="alternate" hreflang="de" href="https://{{ domain }}/de{{ path }}" />
+        <link rel="alternate" hreflang="x-default" href="https://{{ domain }}/en{{ path }}" />
+        <link rel="canonical" href="https://{{ domain }}/de{{ path }}" />
+        <meta name="robots" content="index, follow">
+
+        <script type="module" src="/assets/scripts/turbo.js"></script>
+        <!-- 100% privacy-first analytics -->
+        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <div class="navbar-items navbar-items-left">
+                    <a id="menu-button" class="navbar-link" onclick="toggleMenu();"><i class="bi bi-list"></i></a>
+                </div>
+                <div class="navbar-items navbar-items-center">
+                    <a href="/de" class="navbar-link">Startseite</a>
+                    <a href="https://github.com/janjbnck?tab=repositories" class="navbar-link">Projekte</a>
+                    <a href="/de/about" class="navbar-link">Über mich</a>
+                    <a href="mailto:jan@biernacik.dev" class="navbar-link">Kontakt</a>
+                </div>
+                <div class="navbar-items navbar-items-right">
+                    <a href="/en{{ path }}" class="navbar-link"><i class="bi bi-globe"></i></a>
+                    <a href="https://github.com/janjbnck" class="navbar-link"><i class="bi bi-github"></i></a>
+                </div>
+            </nav>
+            <div id="menu">
+                <div onclick="toggleMenu();" id="menu-closer"></div>
+                <ul id="menu-items">
+                    <li><a href="/de" class="menu-link">Startseite</a></li>
+                    <li><a href="https://github.com/janjbnck?tab=repositories" class="menu-link">Projekte</a></li>
+                    <li><a href="/de/about" class="menu-link">Über mich</a></li>
+                    <li><a href="mailto:jan@biernacik.dev" class="menu-link">Kontakt</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>
+            <ul>
+                <li><a href="{{ privacyPolicyUrl }}">Datenschutzerklärung</a></li>
+                <li><a href="{{ sourceCodeUrl }}">Quellcode</a></li>
+                <li><a href="/en{{ path }}">English Version</a></li>
+                <p><i class="bi bi-c-circle"></i> 2025 Jan Biernacik</p>
+            </ul>
+        </footer>
+    </body>
+</html>

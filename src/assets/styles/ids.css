@@ -1,0 +1,55 @@
+/* Navbar and Menu */
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--spacing-larger);
+    background-color: var(--color-background-alt-transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(var(--blur-radius));
+    -webkit-backdrop-filter: blur(var(--blur-radius));
+    transition: all .25s;
+    z-index: 1;
+}
+#menu {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: var(--spacing-larger);
+    width: 100%;
+    height: 100lvh;
+    padding: var(--spacing-normal) 0 0 0;
+    background-color: var(--color-background-transparent);
+    backdrop-filter: blur(var(--blur-radius));
+    -webkit-backdrop-filter: blur(var(--blur-radius));
+    transition: all .25s;
+    z-index: 1;
+}
+#menu-closer {
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#menu-items {
+    transition: all .5s ease;
+    transform: translateX(-100%);
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    height: fit-content;
+    z-index: 2;
+}
+#menu-items li {
+    margin-bottom: var(--spacing-x-small);
+}
+#menu-button {
+    display: none;
+    cursor: pointer;
+}
