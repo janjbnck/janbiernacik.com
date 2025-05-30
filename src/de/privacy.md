@@ -7,7 +7,7 @@ keywords: Datenschutz
 path: /privacy
 ---
 
-{% include "components/pageHeader.njk" %}
+{% include "components/pageHeaderDE.njk" %}
 
 <div class="section">
 

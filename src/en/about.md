@@ -7,7 +7,7 @@ keywords: About Me
 path: /about
 ---
 
-{% include "components/pageHeader.njk" %}
+{% include "components/pageHeaderEN.njk" %}
 
 <div class="section">
 

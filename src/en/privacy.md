@@ -7,7 +7,7 @@ keywords: Privacy
 path: /privacy
 ---
 
-{% include "components/pageHeader.njk" %}
+{% include "components/pageHeaderEN.njk" %}
 
 <div class="section">
 
