@@ -15,7 +15,7 @@ path: /
             <a href="https://x.com/janjbnck" class="banner-social-icon"><i class="bi bi-twitter-x"></i></a>
             <a href="https://instagram.com/janjbnck" class="banner-social-icon"><i class="bi bi-instagram"></i></a>
             <a href="https://www.reddit.com/user/janjbnck/" class="banner-social-icon"><i class="bi bi-reddit"></i></a>
-            <a href="https://www.linkedin.com/in/jan-biernacik-a6b298356/" class="banner-social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/janjbnck/" class="banner-social-icon"><i class="bi bi-linkedin"></i></a>
             <a href="mailto:jan@biernacik.dev" class="banner-social-icon"><i class="bi bi-envelope-fill"></i></a>
         </div>
     </div>
