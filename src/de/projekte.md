@@ -9,6 +9,6 @@ path: /projekte
 
 {% include "components/pageHeaderDE.njk" %}
 
-Meine Projekte sind auf [GitHub](https://github.com/janjbnck) verfügbar. Eine automatische Weiterleitung sollte nun erfolgen.
+Meine Projekte sind auf [GitHub](https://github.com/janjbnck?tab=repositories) verfügbar. Eine automatische Weiterleitung sollte nun erfolgen.
 
-<script>window.location.href = "https://github.com/janjbnck";</script>
+<script>window.location.href = "https://github.com/janjbnck?tab=repositories";</script>
