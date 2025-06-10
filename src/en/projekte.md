@@ -9,6 +9,6 @@ path: /projects
 
 {% include "components/pageHeaderDE.njk" %}
 
-My projects are available on [GitHub](https://github.com/janjbnck).
+My projects are available on [GitHub](https://github.com/janjbnck). You should automatically be redirected in a moment.
 
 <script>window.location.href = "https://github.com/janjbnck";</script>
