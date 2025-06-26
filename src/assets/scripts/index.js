@@ -18,7 +18,7 @@ function toggleMenu() {
         var menuOpen = $("#menu").css("visibility") === "visible";
         if(!menuOpen) {
             $("body").css({"overflow": "hidden"});
-            $("#navbar").css({"background-color": "var(--color-background-alt)"});
+            $("#navbar").css({"background-color": "var(--color-background)"});
             $("#menu").css({"opacity": "1", "visibility": "visible"});
             $("#menu-items").css({"transform": "translateX(var(--spacing-small))"});
             setTimeout(function() {
@@ -26,7 +26,7 @@ function toggleMenu() {
             }, 500);
         } else {
             $("body").css({"overflow": "auto"});
-            $("#navbar").css({"background-color": "var(--color-background-alt-transparent)"});
+            $("#navbar").css({"background-color": "var(--color-background-transparent)"});
             $("#menu").css({"opacity": "0", "visibility": "hidden"});
             $("#menu-items").css({"transform": "translateX(-100%)"});
         }
