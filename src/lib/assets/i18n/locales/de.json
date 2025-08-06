@@ -7,5 +7,8 @@
 	},
 	"miscMsg": {
 		"maintenanceMode": "Wartungsmodus"
+	},
+	"functions": {
+		"langSwitch": "Sprache wechseln"
 	}
 }

@@ -1,25 +1,42 @@
 <script lang="ts">
-	import { text } from '@sveltejs/kit';
-	import { getLocaleFromNavigator, locale } from 'svelte-i18n';
+	import { browser } from '$app/environment';
+	import { locale, _ } from 'svelte-i18n';
 
-	const userDefaultLang: string = String(getLocaleFromNavigator()).slice(0, 2);
-	let langId: number;
-
-	if (userDefaultLang.slice(0, 2) === 'de') {
-		langId = 2;
-	} else {
-		langId = 1;
-	}
-
-	const changeLanguage = () => {
-		if (langId !== 2) {
-			locale.set('de');
-			langId = 2;
-		} else {
-			locale.set('en');
-			langId = 1;
+	const langSwitchFunction = () => {
+		if (browser) {
+			if (localStorage.getItem('userLang') != null || undefined) {
+				let userLang: string = String(localStorage.getItem('userLang')).slice(0, 2);
+				if (userLang === 'de') {
+					locale.set('en');
+					localStorage.setItem('userLang', 'en');
+				} else {
+					locale.set('de');
+					localStorage.setItem('userLang', 'de');
+				}
+			} else {
+				let currentLang: string = String($locale).slice(0, 2);
+				if (currentLang === 'de') {
+					locale.set('en');
+					localStorage.setItem('userLang', 'en');
+				} else {
+					locale.set('de');
+					localStorage.setItem('userLang', 'de');
+				}
+			}
 		}
 	};
 </script>
 
-<button on:click={changeLanguage}>Change Language</button>
+<button on:click={langSwitchFunction}
+	><i class="bi bi-globe"></i> {$_('functions.langSwitch')}</button
+>
+
+<style>
+	button {
+		margin: 4px 0;
+		background-color: lightgray;
+		border: solid 4px lightgray;
+		border-radius: 2px;
+		cursor: pointer;
+	}
+</style>
