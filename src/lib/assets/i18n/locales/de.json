@@ -1,0 +1,11 @@
+{
+	"langId": 2,
+	"pages": {
+		"homePage": {
+			"pageTitle": "Startseite"
+		}
+	},
+	"miscMsg": {
+		"maintenanceMode": "Wartungsmodus"
+	}
+}
