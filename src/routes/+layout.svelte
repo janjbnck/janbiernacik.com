@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import { isLoading } from 'svelte-i18n';
 
 	import { _ } from 'svelte-i18n';
 
@@ -12,4 +13,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children?.()}
+{#if !isLoading}
+	{@render children?.()}
+{/if}
