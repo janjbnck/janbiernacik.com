@@ -3,7 +3,8 @@
 	"pages": {
 		"homePage": {
 			"pageTitle": "Startseite",
-			"pageDesc": "Technikbegeisterter angehender Frontend-Webentwickler und Azubi bei Fricke."
+			"pageDesc": "Technikbegeisterter angehender Frontend-Webentwickler und Azubi bei Fricke.",
+			"slogan": "Technikenthusiast und angehender Frontend-Webentwickler aus &#128205; Hamburg."
 		},
 		"privacyPage": {
 			"pageTitle": "Datenschutz",
@@ -80,6 +81,7 @@
 	},
 	"miscMsg": {
 		"maintenanceMode": "Wartungsmodus",
+		"maintenanceModeNotice": "Diese Seite befindet zurzeit im Aufbau.",
 		"privacyPolicy": "Datenschutzerklärung"
 	},
 	"functions": {

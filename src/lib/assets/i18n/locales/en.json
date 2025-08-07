@@ -3,7 +3,8 @@
 	"pages": {
 		"homePage": {
 			"pageTitle": "Home Page",
-			"pageDesc": "Tech-savvy aspiring front-end web developer and apprentice at Fricke."
+			"pageDesc": "Tech-savvy aspiring front-end web developer and apprentice at Fricke.",
+			"slogan": "Tech-savvy aspiring front-end web developer and apprentice from &#128205; Hamburg."
 		},
 		"privacyPage": {
 			"pageTitle": "Privacy",
@@ -80,6 +81,7 @@
 	},
 	"miscMsg": {
 		"maintenanceMode": "Maintenance mode",
+		"maintenanceModeNotice": "This website is currently under construction.",
 		"privacyPolicy": "Privacy Policy"
 	},
 	"functions": {

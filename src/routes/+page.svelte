@@ -2,6 +2,7 @@
 	import { _ } from 'svelte-i18n';
 	import LangChangeButton from '$lib/assets/components/LangChangeButton.svelte';
 	import PageHeader from '$lib/assets/components/PageHeader.svelte';
+	import HomePageBanner from '$lib/assets/components/HomePageBanner.svelte';
 </script>
 
 <svelte:head>
@@ -15,7 +16,9 @@
 	<link rel="canonical" href="https://janbiernacik.com" />
 </svelte:head>
 
-<PageHeader noBackBtn={true} pageTitle={$_('miscMsg.maintenanceMode')} />
+<HomePageBanner />
 <LangChangeButton />
+<PageHeader noBackBtn={true} pageTitle={$_('miscMsg.maintenanceMode')} />
+<p>{$_('miscMsg.maintenanceModeNotice')}</p>
 
-<a class="block" href="/privacy">{$_('pages.privacyPage.pageTitle')}</a>
+<a href="/privacy">{$_('pages.privacyPage.pageTitle')}</a>
