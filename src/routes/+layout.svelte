@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import { isLoading } from 'svelte-i18n';
 
 	import { _ } from 'svelte-i18n';
 

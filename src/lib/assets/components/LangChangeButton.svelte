@@ -1,26 +1,29 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { locale, _ } from 'svelte-i18n';
+	import getNavigatorLang from '../scripts/lang-init';
 
 	const langSwitchFunction = () => {
 		if (browser) {
-			if (localStorage.getItem('userLang') != null || undefined) {
-				let userLang: string = String(localStorage.getItem('userLang')).slice(0, 2);
-				if (userLang === 'de') {
+			if (localStorage.getItem('userLangPref')) {
+				const lang = String(localStorage.getItem('userLangPref'));
+				if (lang === 'de') {
 					locale.set('en');
-					localStorage.setItem('userLang', 'en');
-				} else {
+					localStorage.setItem('userLangPref', 'en');
+				}
+				if (lang === 'en') {
 					locale.set('de');
-					localStorage.setItem('userLang', 'de');
+					localStorage.setItem('userLangPref', 'de');
 				}
 			} else {
-				let currentLang: string = String($locale).slice(0, 2);
-				if (currentLang === 'de') {
+				const lang = String(getNavigatorLang());
+				if (lang === 'de') {
 					locale.set('en');
-					localStorage.setItem('userLang', 'en');
-				} else {
+					localStorage.setItem('userLangPref', 'en');
+				}
+				if (lang === 'en') {
 					locale.set('de');
-					localStorage.setItem('userLang', 'de');
+					localStorage.setItem('userLangPref', 'de');
 				}
 			}
 		}
@@ -30,13 +33,3 @@
 <button on:click={langSwitchFunction}
 	><i class="bi bi-globe"></i> {$_('functions.langSwitch')}</button
 >
-
-<style>
-	button {
-		margin: 4px 0;
-		background-color: lightgray;
-		border: solid 4px lightgray;
-		border-radius: 2px;
-		cursor: pointer;
-	}
-</style>
