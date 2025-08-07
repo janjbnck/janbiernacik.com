@@ -1,14 +1,107 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css');
 @import 'tailwindcss';
 
+/* Main Elements */
+
+:root {
+	--color-background: #16161d;
+	--color-background-transparent: #16161d80;
+	--color-background-alt: #202028;
+	--color-background-alt-transparent: #20202880;
+	--color-border: #2a2a34;
+	--color-title: #ffffff;
+	--color-text: #ccccd0;
+	--color-highlight: #ffffff;
+	--blur-radius: 10px;
+	--radius-corner: 8px;
+	--spacing-x-small: 5px;
+	--spacing-small: 10px;
+	--spacing-normal: 20px;
+	--spacing-large: 40px;
+	--spacing-larger: 60px;
+	--spacing-x-large: 80px;
+	--spacing-xx-large: 100px;
+}
+
+* {
+	text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
 body {
-	margin: 10px;
+	background-color: var(--color-background);
+	padding: 20px;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/* Text Elements */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-title);
+	margin: var(--spacing-normal) 0;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+}
+
+h1 {
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+p,
+span,
+li {
+	color: var(--color-text);
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin: var(--spacing-small) 0;
+}
+
+ul {
+	list-style-type: circle;
+	padding-left: var(--spacing-large);
+}
+
+b {
+	color: var(--color-highlight);
+}
+
+/* Interactive Elements */
+
+a {
+	color: var(--color-highlight);
+	text-decoration: underline;
+}
+a:hover {
+	color: var(--color-text);
+	text-decoration: none;
 }
 
 button {
 	margin: 4px 0;
-	background-color: lightgray;
-	border: solid 4px lightgray;
+	background-color: var(--color-border);
+	border: solid 4px var(--color-border);
 	border-radius: 2px;
 	cursor: pointer;
+	color: var(--color-text);
 }

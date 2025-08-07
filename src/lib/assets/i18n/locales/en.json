@@ -3,12 +3,85 @@
 	"pages": {
 		"homePage": {
 			"pageTitle": "Home Page"
+		},
+		"privacyPage": {
+			"pageTitle": "Privacy",
+			"sections": {
+				"generalInfo": {
+					"sectionTitle": "General Information",
+					"sectionContent": {
+						"notice": "This website serves as a personal portfolio and is operated by a private individual. The protection of your personal data is very important to me. I treat your personal data confidentially and in accordance with the statutory data protection regulations, in particular the General Data Protection Regulation (GDPR)."
+					}
+				},
+				"responsibleAuthority": {
+					"sectionTitle": "Responsible Authority",
+					"sectionContent": {
+						"introduction": "The person responsible for data processing on this website is:",
+						"data": "Jan Biernacik<br />Hamburg, Germany"
+					}
+				},
+				"hosting": {
+					"sectionTitle": "Hosting",
+					"sectionContent": {
+						"introduction": "This website is operated by an external provider (Vercel Inc.). When you visit the website, this provider automatically collects data about accesses and stores it in so-called server log files. This data includes:",
+						"dataList": "<li>IP address of the visitor</li><li>Date and time of access</li><li>Browser and operating system used</li><li>Pages/files accessed</li>",
+						"gdprNotice": "The processing is carried out for the technical delivery and security of the website on the basis of Art. 6 (1) lit. f GDPR (legitimate interest in stable and secure operation of the website).",
+						"providerInfo": "<p><b>Provider</b><br />Vercel Inc<br />440 N Barranca Avenue #4133<br />Covina, CA 91723<br />USA</p>",
+						"privacyPolicyUrl": "https://vercel.com/legal/privacy-policy"
+					}
+				},
+				"embeddedServices": {
+					"sectionTitle": "Embedded features and external services",
+					"sectionContent": {
+						"analytics": {
+							"subsectionTitle": "Analytics",
+							"introduction": "Simple Analytics is used for anonymous analysis of the use of this website. No personal data such as IP addresses or cookies are used. The data collected only provides insight into aggregated metrics (e.g., page views, device types).",
+							"gdprNotice": "Legal basis: Art. 6 (1) (f) GDPR (legitimate interest in the anonymized evaluation of usage behavior).",
+							"providerInfo": "<b>Provider</b><br />Simple Analytics<br />Hooftlaan 4<br />1401 ED Bussum<br />The Netherlands",
+							"privacyPolicyUrl": "https://simpleanalytics.com/privacy"
+						},
+						"github": {
+							"subsectionTitle": "GitHub API",
+							"introduction": "The public GitHub API is used to display GitHub repositories and profile data. No personal data from visitors is transmitted to GitHub; all data comes exclusively from my own GitHub account.",
+							"providerInfo": "<b>Provider</b><br />GitHub Inc.<br />88 Colin P Kelly Jr St<br />San Francisco, CA 94107<br />USA",
+							"privacyPolicyUrl": "https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+						},
+						"icons": {
+							"subsectionTitle": "Icons",
+							"introduction": "Bootstrap icons are integrated to display icons. This involves establishing a connection to a content delivery network (CDN), which may involve the transfer of data (e.g., IP address) to the provider's server.",
+							"providerInfo": "<a href='https://icons.getbootstrap.com'>Bootstrap Icons<br /></a>",
+							"privacyPolicyUrl": "https://www.jsdelivr.com/terms/privacy-policy"
+						},
+						"fonts": {
+							"subsectionTitle": "Fonts",
+							"introduction": "The fonts used on this website are integrated locally. This means that no data is transferred to third parties in this context."
+						}
+					}
+				},
+				"rights": {
+					"sectionTitle": "Your Rights",
+					"sectionContent": {
+						"introduction": "As a data subject, you have the following rights:",
+						"rightsList": "<li>Right of access (Art. 15 GDPR)</li><li>Right to rectification (Art. 16 GDPR)</li><li>Right to erasure (Art. 17 GDPR)</li><li>Right to restriction of processing (Art. 18 GDPR)</li><li>Right to object (Art. 21 GDPR)</li><li>Right to data portability (Art. 20 GDPR)</li>",
+						"contactNotice": "To exercise your rights, please contact me by email at the address provided above."
+					}
+				},
+				"changeNotice": {
+					"sectionTitle": "Changes to this Privacy Policy",
+					"sectionContent": {
+						"introduction": "I reserve the right to update this privacy policy if changes are made to the website or due to legal requirements.",
+						"lastMod": "<b>Last updated:</b> August 7, 2025"
+					}
+				}
+			}
 		}
 	},
 	"miscMsg": {
-		"maintenanceMode": "Maintenance mode"
+		"maintenanceMode": "Maintenance mode",
+		"privacyPolicy": "Privacy Policy"
 	},
 	"functions": {
-		"langSwitch": "Switch language"
+		"langSwitch": "Switch language",
+		"back": "Back"
 	}
 }
