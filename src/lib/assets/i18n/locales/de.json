@@ -2,10 +2,12 @@
 	"langId": 2,
 	"pages": {
 		"homePage": {
-			"pageTitle": "Startseite"
+			"pageTitle": "Startseite",
+			"pageDesc": "Technikbegeisterter angehender Frontend-Webentwickler und Azubi bei Fricke."
 		},
 		"privacyPage": {
 			"pageTitle": "Datenschutz",
+			"pageDesc": "Dies ist die Datenschutzerklärung meiner Website.",
 			"sections": {
 				"generalInfo": {
 					"sectionTitle": "Allgemeine Hinweise",

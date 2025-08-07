@@ -2,10 +2,12 @@
 	"langId": 1,
 	"pages": {
 		"homePage": {
-			"pageTitle": "Home Page"
+			"pageTitle": "Home Page",
+			"pageDesc": "Tech-savvy aspiring front-end web developer and apprentice at Fricke."
 		},
 		"privacyPage": {
 			"pageTitle": "Privacy",
+			"pageDesc": "This is the privacy policy of my website.",
 			"sections": {
 				"generalInfo": {
 					"sectionTitle": "General Information",

@@ -7,5 +7,5 @@
 
 <h1 style="margin-bottom: 0;" class="text-3xl">{pageTitle}</h1>
 {#if noBackBtn == false}
-	<a href="/">{$_('functions.back')}</a>
+	<a href="/"><i class="bi bi-arrow-left no-underline"> </i>{$_('functions.back')}</a>
 {/if}

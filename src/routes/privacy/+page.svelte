@@ -5,10 +5,13 @@
 
 <svelte:head>
 	<title>Jan Biernacik - {$_('pages.privacyPage.pageTitle')}</title>
-	<link rel="alternate" hreflang="en" href="https://janbiernacik.com" />
-	<link rel="alternate" hreflang="de" href="https://janbiernacik.com" />
-	<link rel="alternate" hreflang="x-default" href="https://janbiernacik.com" />
-	<link rel="canonical" href="https://janbiernacik.com" />
+	<meta name="description" content={$_('pages.privacyPage.pageDesc')} />
+	<meta name="keywords" content="Jan Biernacik, {$_('pages.privacyPage.pageTitle')}" />
+	<meta name="author" content="Jan Biernacik" />
+	<link rel="alternate" hreflang="en" href="https://janbiernacik.com/privacy" />
+	<link rel="alternate" hreflang="de" href="https://janbiernacik.com/privacy" />
+	<link rel="alternate" hreflang="x-default" href="https://janbiernacik.com/privacy" />
+	<link rel="canonical" href="https://janbiernacik.com/privacy" />
 </svelte:head>
 
 <PageHeader pageTitle={$_('pages.privacyPage.pageTitle')} />
