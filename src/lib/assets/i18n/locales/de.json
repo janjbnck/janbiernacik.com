@@ -16,7 +16,7 @@
 						"notice": "Diese Website dient als persönliches Portfolio und wird von einer Privatperson betrieben. Der Schutz Ihrer persönlichen Daten ist mir ein wichtiges Anliegen. Ich behandle Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO)."
 					}
 				},
-				"dataController": {
+				"responsibleAuthority": {
 					"sectionTitle": "Verantwortliche Stelle",
 					"sectionContent": {
 						"introduction": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
