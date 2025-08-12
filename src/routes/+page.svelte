@@ -4,4 +4,11 @@
 	if (browser) window.location.href = 'https://github.com/janjbnck';
 </script>
 
-<a href="https://github.com/janjbnck">GitHub</a>
+<svelte:head>
+	<title>Jan Biernacik</title>
+</svelte:head>
+
+<noscript>
+	<h1>Jan Biernacik</h1>
+	<a href="https://github.com/janjbnck">GitHub</a>
+</noscript>
