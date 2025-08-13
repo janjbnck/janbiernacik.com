@@ -1,3 +1,9 @@
 {
-	"aboutMe": "Mein Name ist Jan, und ich bin Softwareentwickler aus Hamburg. Zurzeit absolviere ich eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung bei der <a class='font-medium text-blue-600 dark:text-blue-500 hover:underline' href='https://fricke.de'>Fricke Gruppe</a>."
+	"home": {
+		"pageDescription": "Softwareentwickler aus Hamburg und Azubi bei Fricke.",
+		"aboutMe": "Mein Name ist Jan und ich bin <strong>Softwareentwickler</strong> aus Hamburg. Zurzeit absolviere ich eine <strong>Ausbildung zum Fachinformatiker für Anwendungsentwicklung</strong> bei der <a href='https://fricke.de'>Fricke Gruppe</a>."
+	},
+	"specialMsg": {
+		"underConstruction": "Diese Webseite befindet sich noch im Aufbau."
+	}
 }

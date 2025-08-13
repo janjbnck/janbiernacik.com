@@ -1,3 +1,9 @@
 {
-	"aboutMe": "My name is Jan, and I am a Software Developer from Hamburg, Germany. I am currently completing an apprenticeship as an IT Specialist in Application Development at the <a class='font-medium text-blue-600 dark:text-blue-500 hover:underline' href='https://fricke.de'>Fricke Group</a>."
+	"home": {
+		"pageDescription": "Software Developer from Hamburg and apprentice at Fricke.",
+		"aboutMe": "My name is Jan, and I am a <strong>Software Developer</strong> from Hamburg, Germany. I am currently completing an <strong>apprenticeship as an IT Specialist in Application Development</strong> at the <a href='https://fricke.de'>Fricke Group</a>."
+	},
+	"specialMsg": {
+		"underConstruction": "This website is still under construction."
+	}
 }
