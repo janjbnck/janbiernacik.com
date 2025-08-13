@@ -1,49 +1,72 @@
 @import 'tailwindcss';
-
-@theme {
-	--color-background: #16161b;
-	--color-text: #c0c0c5;
-	--color-highlight: #ffffff;
-	--spacing-medium: 20px;
-}
+@import 'bootstrap-icons';
+@import '$lib/assets/styles/vars.css';
 
 body {
 	@apply bg-background;
 }
 
 main {
-	@apply mr-auto ml-auto max-w-[1200px] p-(--spacing-medium);
+	@apply p-(--spacing-medium) ml-auto mr-auto max-w-[1200px];
+}
+
+footer {
+	@apply pl-(--spacing-medium) pr-(--spacing-medium) pb-(--spacing-large) ml-auto mr-auto max-w-[1200px];
 }
 
 /* Global Text Elements */
 
-main h1,
-main h2,
-main h3,
-main h4,
-main h5,
-main h6 {
-	@apply mt-(--spacing-medium) mb-(--spacing-medium) font-bold text-highlight;
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	@apply text-highlight font-bold;
 }
 
-main h1 {
-	@apply text-3xl;
+body h1,
+body h2 {
+	@apply mt-(--spacing-large) mb-(--spacing-medium);
 }
 
-main p,
-main span,
-main li {
-	@apply text-text;
-}
-
-main p {
+body h3,
+body h4,
+body h5,
+body h6 {
 	@apply mt-(--spacing-medium) mb-(--spacing-medium);
 }
 
-main a {
+body h1 {
+	@apply text-4xl;
+}
+
+body h2 {
+	@apply text-2xl;
+}
+
+body h3 {
+	@apply text-lg;
+}
+
+body p,
+body span,
+body li {
+	@apply text-text;
+}
+
+body p {
+	@apply mt-(--spacing-medium) mb-(--spacing-medium);
+}
+
+body a {
 	@apply text-highlight underline hover:no-underline;
 }
 
-main strong {
-	@apply font-bold text-highlight;
+body strong {
+	@apply text-highlight font-bold;
+}
+
+body ul li {
+	@apply ml-(--spacing-large) list-disc;
 }

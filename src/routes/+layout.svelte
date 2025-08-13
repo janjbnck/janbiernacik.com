@@ -1,6 +1,8 @@
 <script lang="ts">
 	import '../app.css';
 
+	import Footer from '$lib/assets/components/Footer.svelte';
+
 	let { children } = $props();
 </script>
 
@@ -13,8 +15,13 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<meta name="theme-color" content="var(--color-background)" />
 	<meta name="robots" content="index, follow" />
+	<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </svelte:head>
 
 <main>
 	{@render children?.()}
 </main>
+
+<footer>
+	<Footer />
+</footer>

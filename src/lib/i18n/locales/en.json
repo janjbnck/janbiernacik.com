@@ -1,9 +1,97 @@
 {
 	"home": {
+		"pageTitle": "Home Page",
 		"pageDescription": "Software Developer from Hamburg and apprentice at Fricke.",
 		"aboutMe": "My name is Jan, and I am a <strong>Software Developer</strong> from Hamburg, Germany. I am currently completing an <strong>apprenticeship as an IT Specialist in Application Development</strong> at the <a href='https://fricke.de'>Fricke Group</a>."
 	},
+	"privacy": {
+		"pageTitle": "Privacy",
+		"pageDescription": "Privacy policy of my website.",
+		"lastUpdated": "<b>Last updated:</b> August 13, 2025",
+		"general": {
+			"title": "1. General Information",
+			"body": "This website serves as a personal portfolio and is operated by a private individual. Protecting your personal data is an important concern for me. I handle your personal data confidentially and in accordance with the statutory data protection regulations, in particular the General Data Protection Regulation (GDPR)."
+		},
+		"controller": {
+			"title": "2. Controller",
+			"name": "Jan Biernacik",
+			"address": "Hamburg, Germany",
+			"email": {
+				"label": "Email",
+				"value": "jan@biernacik.dev",
+				"mailto": "mailto:jan@biernacik.dev"
+			}
+		},
+		"hosting": {
+			"title": "3. Hosting",
+			"body": "This website is hosted by an external provider (Vercel Inc.). When you visit the website, this provider automatically collects data about accesses and stores them in so-called server log files. Processing is carried out for the technical delivery and security of the website on the basis of Art. 6 para. 1 lit. f GDPR (legitimate interest in a stable and secure operation of the website).",
+			"logs": {
+				"title": "Collected log data",
+				"items": [
+					"IP address of the visitor",
+					"Date and time of access",
+					"Browser and operating system used",
+					"Pages/files accessed"
+				]
+			},
+			"provider": {
+				"label": "Provider",
+				"name": "Vercel Inc.",
+				"address": "440 N Barranca Avenue #4133, Covina, CA 91723, USA",
+				"privacy": {
+					"label": "Privacy Policy",
+					"url": "https://vercel.com/legal/privacy-policy"
+				}
+			}
+		},
+		"services": {
+			"title": "4. Embedded Features and External Services",
+			"analytics": {
+				"title": "4.1 Web Analytics",
+				"body": "Simple Analytics is used for anonymized analysis of the use of this website. No personal data such as IP addresses or cookies are used. The collected data only provides insights into aggregated metrics (e.g., page views, device types).",
+				"legalBasis": "Legal basis: Art. 6 para. 1 lit. f GDPR (legitimate interest in the anonymized evaluation of user behavior).",
+				"provider": {
+					"name": "Simple Analytics B.V.",
+					"address": "Hooftlaan 4, 1401 ED Bussum, Netherlands",
+					"privacy": {
+						"label": "Privacy Policy",
+						"url": "https://simpleanalytics.com/privacy"
+					}
+				}
+			},
+			"github": {
+				"title": "4.2 GitHub API",
+				"body": "The public GitHub API is used to display GitHub repositories and profile data. No personal data of visitors is transmitted to GitHub; all data comes exclusively from my own GitHub account.",
+				"provider": {
+					"name": "GitHub Inc.",
+					"address": "88 Colin P Kelly Jr St, San Francisco, CA 94107, USA",
+					"privacy": {
+						"label": "Privacy Policy",
+						"url": "https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+					}
+				}
+			}
+		},
+		"rights": {
+			"title": "5. Rights of the Data Subject",
+			"intro": "As a data subject, you have the following rights:",
+			"items": [
+				"Access according to Art. 15 GDPR",
+				"Rectification according to Art. 16 GDPR",
+				"Erasure according to Art. 17 GDPR",
+				"Restriction of processing according to Art. 18 GDPR",
+				"Objection to processing according to Art. 21 GDPR",
+				"Data portability according to Art. 20 GDPR"
+			],
+			"contactHint": "To exercise your rights, please contact me by email at the address provided above."
+		},
+		"changes": {
+			"title": "6. Changes to This Privacy Policy",
+			"body": "I reserve the right to update this privacy policy in the event of changes to the website or due to legal requirements."
+		}
+	},
 	"specialMsg": {
+		"goBack": "Go Back",
 		"underConstruction": "This website is still under construction."
 	}
 }

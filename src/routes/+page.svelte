@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Jan Biernacik</title>
+	<title>Jan Biernacik - {$t('home.pageTitle')}</title>
 	<meta name="description" content={$t('home.pageDescription')} />
 	<link rel="canonical" href="https://janbiernacik.com" />
 </svelte:head>
