@@ -1,14 +1,10 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-
-	if (browser) window.location.href = 'https://github.com/janjbnck';
+	import { t } from 'svelte-i18n';
 </script>
 
 <svelte:head>
 	<title>Jan Biernacik</title>
 </svelte:head>
 
-<noscript>
-	<h1>Jan Biernacik</h1>
-	<a href="https://github.com/janjbnck">GitHub</a>
-</noscript>
+<h1 class="text-2xl font-bold">Jan Biernacik</h1>
+<p>{@html $t('aboutMe')}</p>
