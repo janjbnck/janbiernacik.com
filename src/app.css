@@ -7,7 +7,7 @@ body {
 }
 
 main {
-	@apply p-(--spacing-medium) ml-auto mr-auto max-w-[1200px];
+	@apply p-(--spacing-medium) pt-(--spacing-x-large) ml-auto mr-auto max-w-[1200px];
 }
 
 footer {

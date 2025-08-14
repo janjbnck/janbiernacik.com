@@ -1,7 +1,10 @@
 @theme {
 	--color-background: #16161b;
+	--color-background-transparent: #16161b80;
 	--color-text: #c0c0c5;
 	--color-highlight: #ffffff;
 	--spacing-medium: 20px;
 	--spacing-large: 40px;
+	--spacing-x-large: 80px;
+	--radius-blur: 10px;
 }
