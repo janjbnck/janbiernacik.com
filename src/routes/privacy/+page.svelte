@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { t } from 'svelte-i18n';
 	import PageHeader from '$lib/assets/components/PageHeader.svelte';
-	import { json } from '@sveltejs/kit';
 </script>
 
 <svelte:head>
 	<title>Jan Biernacik - {$t('privacy.pageTitle')}</title>
 	<meta name="description" content={$t('privacy.pageDescription')} />
-	<link rel="canonical" href="https://janbiernacik.com" />
+	<link rel="canonical" href="https://janbiernacik.com/privacy" />
+	<meta name="robots" content="index, follow" />
 </svelte:head>
 
 <PageHeader pageTitle={$t('privacy.pageTitle')} />

@@ -14,7 +14,6 @@
 	<meta name="apple-mobile-web-app-title" content="Jan Biernacik" />
 	<link rel="manifest" href="/site.webmanifest" />
 	<meta name="theme-color" content="var(--color-background)" />
-	<meta name="robots" content="index, follow" />
 	<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </svelte:head>
 

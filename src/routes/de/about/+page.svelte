@@ -3,3 +3,7 @@
 
 	if (browser) window.location.href = '/';
 </script>
+
+<svelte:head>
+	<meta name="robots" content="noindex, nofollow" />
+</svelte:head>
