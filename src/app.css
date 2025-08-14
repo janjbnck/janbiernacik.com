@@ -63,6 +63,10 @@ body a {
 	@apply text-highlight underline hover:no-underline;
 }
 
+body button {
+	@apply text-highlight;
+}
+
 body strong {
 	@apply text-highlight font-bold;
 }

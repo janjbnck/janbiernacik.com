@@ -2,14 +2,16 @@
 	import '../app.css';
 
 	import Footer from '$lib/assets/components/Footer.svelte';
-	import { locale } from 'svelte-i18n';
-	import { browser } from '$app/environment';
 	import Navbar from '$lib/assets/components/Navbar.svelte';
+	import { getLangPref, hasLangPref } from '$lib/assets/scripts/langPref';
+	import { locale } from 'svelte-i18n';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		locale.set(getLangPref());
+	});
 
 	let { children } = $props();
-	if (browser) {
-		locale.set(navigator.language.slice(0, 2));
-	}
 </script>
 
 <svelte:head>

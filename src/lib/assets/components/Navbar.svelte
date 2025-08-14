@@ -1,7 +1,14 @@
+<script>
+	import { langSwitch } from '../scripts/langSwitch';
+</script>
+
 <nav id="navbar">
 	<div id="navbar-items-left"></div>
 	<div id="navbar-items-center"></div>
 	<div id="navbar-items-right">
+		<button class="navbar-link" aria-label="de" onclick={langSwitch}
+			><i class="bi bi-globe"></i>
+		</button>
 		<a class="navbar-link" aria-label="GitHub" href="https://github.com/janjbnck"
 			><i class="bi bi-github"></i></a
 		>
@@ -17,8 +24,11 @@
 	#navbar-items-right {
 		@apply mr-(--spacing-medium);
 	}
+	#navbar-items-right .navbar-link {
+		@apply ml-(--spacing-small);
+	}
 
 	.navbar-link {
-		@apply text-xl;
+		@apply cursor-pointer text-xl;
 	}
 </style>
