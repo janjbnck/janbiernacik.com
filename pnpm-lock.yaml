@@ -11,6 +11,9 @@ importers:
       bootstrap-icons:
         specifier: ^1.13.1
         version: 1.13.1
+      es5-ext:
+        specifier: ^0.10.64
+        version: 0.10.64
       svelte-i18n:
         specifier: ^4.0.1
         version: 4.0.1(svelte@5.38.0)
