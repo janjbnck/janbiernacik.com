@@ -3,9 +3,11 @@
 	--color-background-transparent: #16161b80;
 	--color-text: #c0c0c5;
 	--color-highlight: #ffffff;
+	--spacing-x-small: 5px;
 	--spacing-small: 10px;
 	--spacing-medium: 20px;
 	--spacing-large: 40px;
 	--spacing-x-large: 80px;
+	--spacing-xx-large: 100px;
 	--radius-blur: 10px;
 }

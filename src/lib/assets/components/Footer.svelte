@@ -10,6 +10,8 @@
 {/if}
 
 <style>
+	@reference 'tailwindcss';
+	
 	div {
 		@apply flex flex-col items-start;
 	}

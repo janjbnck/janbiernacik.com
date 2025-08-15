@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { t } from 'svelte-i18n';
+	import Banner from '$lib/assets/components/Banner.svelte';
+import { t } from 'svelte-i18n';
 </script>
 
 <svelte:head>
@@ -9,6 +10,6 @@
 	<meta name="robots" content="index, follow" />
 </svelte:head>
 
-<!--<h1>Jan Biernacik</h1>-->
-<p class="text-xl">{@html $t('home.aboutMe')}</p>
-<p>{$t('specialMsg.underConstruction')}</p>
+<Banner />
+
+<p class="text-xl max-md:text-lg">{@html $t('home.aboutMe')}</p>

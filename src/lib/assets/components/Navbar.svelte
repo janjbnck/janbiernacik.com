@@ -9,9 +9,6 @@
 		<button class="navbar-link" aria-label="de" onclick={langSwitch}
 		><i class="bi bi-globe"></i>
 		</button>
-		<a class="navbar-link" aria-label="GitHub" href="https://github.com/janjbnck"
-			><i class="bi bi-github"></i></a
-		>
 	</div>
 </nav>
 
@@ -29,6 +26,6 @@
 	}
 
 	.navbar-link {
-		@apply cursor-pointer text-xl;
+		@apply cursor-pointer text-xl hover:text-(--color-text) transition-all;
 	}
 </style>

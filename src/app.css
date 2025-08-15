@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'bootstrap-icons';
+@import '$lib/assets/styles/fonts.css';
 @import '$lib/assets/styles/vars.css';
 
 body {
@@ -7,11 +8,11 @@ body {
 }
 
 main {
-	@apply p-(--spacing-medium) pt-(--spacing-x-large) ml-auto mr-auto max-w-[1200px];
+	@apply p-(--spacing-medium) pt-(--spacing-x-large) ml-auto mr-auto max-w-[1000px];
 }
 
 footer {
-	@apply pl-(--spacing-medium) pr-(--spacing-medium) pb-(--spacing-large) ml-auto mr-auto max-w-[1200px];
+	@apply pl-(--spacing-medium) pr-(--spacing-medium) pb-(--spacing-large) ml-auto mr-auto max-w-[1000px];
 }
 
 /* Global Text Elements */
@@ -22,7 +23,7 @@ body h3,
 body h4,
 body h5,
 body h6 {
-	@apply text-highlight font-bold;
+	@apply text-highlight font-bold font-['Inter'];
 }
 
 body h1,
@@ -52,7 +53,7 @@ body h3 {
 body p,
 body span,
 body li {
-	@apply text-text;
+	@apply text-text font-['Inter'];
 }
 
 body p {
