@@ -6,7 +6,6 @@
 {#if page.url.pathname !== '/privacy'}
 	<div>
 		<a href="/privacy">{$t('privacy.pageTitle')}</a>
-		<a href="https://github.com/janjbnck">GitHub</a>
 	</div>
 {/if}
 
