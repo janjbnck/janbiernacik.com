@@ -11,6 +11,6 @@
 	@import '$lib/assets/styles/vars.css';
 
 	a {
-		@apply hover:text-text no-underline;
+		@apply hover:text-(--color-text) no-underline;
 	}
 </style>
