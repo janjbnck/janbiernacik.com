@@ -4,12 +4,14 @@
 </script>
 
 {#if page.url.pathname !== '/privacy'}
-	<a href="/privacy">{$t('privacy.pageTitle')}</a>
-	<a href="https://github.com/janjbnck">GitHub</a>
+	<div>
+		<a href="/privacy">{$t('privacy.pageTitle')}</a>
+		<a href="https://github.com/janjbnck">GitHub</a>
+	</div>
 {/if}
 
 <style>
-	a {
-		@apply block;
+	div {
+		@apply flex flex-col items-start;
 	}
 </style>
