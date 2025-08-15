@@ -4,7 +4,7 @@
 @import '$lib/assets/styles/vars.css';
 
 body {
-	@apply bg-background;
+	@apply bg-(--color-background);
 }
 
 main {
@@ -23,7 +23,7 @@ body h3,
 body h4,
 body h5,
 body h6 {
-	@apply text-highlight font-bold font-['Inter'];
+	@apply text-(--color-highlight) font-bold font-['Inter'];
 }
 
 body h1,
@@ -61,15 +61,15 @@ body p {
 }
 
 body a {
-	@apply text-highlight underline hover:no-underline;
+	@apply text-(--color-highlight) underline hover:no-underline;
 }
 
 body button {
-	@apply text-highlight;
+	@apply text-(--color-highlight);
 }
 
 body strong {
-	@apply text-highlight font-bold;
+	@apply text-(--color-highlight) font-bold;
 }
 
 body ul li {

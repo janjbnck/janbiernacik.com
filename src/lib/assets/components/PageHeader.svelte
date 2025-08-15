@@ -8,7 +8,6 @@
 
 <style>
 	@reference 'tailwindcss';
-	@import '$lib/assets/styles/vars.css';
 
 	a {
 		@apply hover:text-(--color-text) no-underline;
