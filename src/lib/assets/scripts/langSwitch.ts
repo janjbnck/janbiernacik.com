@@ -17,4 +17,7 @@ export function langSwitch() {
 			return 'de';
 		}
 	}
+
+	const currentLang = localStorage.getItem('userLangPref');
+	return currentLang;
 }
