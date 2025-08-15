@@ -22,7 +22,7 @@
 		@apply h-(--spacing-x-large) bg-(--color-background-transparent) backdrop-blur-(--radius-blur) fixed top-[0] flex w-full items-center justify-between;
 	}
 	#navbar-items-right {
-		@apply mr-(--spacing-medium)r;
+		@apply mr-(--spacing-medium);
 	}
 	#navbar-items-right .navbar-link {
 		@apply ml-(--spacing-small);
