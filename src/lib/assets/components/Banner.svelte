@@ -10,5 +10,5 @@
             <a href="mailto:jan@biernacik.dev" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
         </div>
     </div>
-    <img class="max-lg:w-[200px] max-md:w-[150px] w-[250px] brightness-85" src="/memoji.png" alt="My Memoji" />
+    <img class="max-lg:w-[200px] max-md:w-[150px] w-[250px] brightness-90" src="/memoji.png" alt="My Memoji" />
 </div>
