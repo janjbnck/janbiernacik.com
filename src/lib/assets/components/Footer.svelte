@@ -4,15 +4,7 @@
 </script>
 
 {#if page.url.pathname !== '/privacy'}
-	<div>
+	<div class="flex flex-col items-start">
 		<a href="/privacy">{$t('privacy.pageTitle')}</a>
 	</div>
 {/if}
-
-<style>
-	@reference 'tailwindcss';
-	
-	div {
-		@apply flex flex-col items-start;
-	}
-</style>

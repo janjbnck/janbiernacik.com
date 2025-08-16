@@ -3,13 +3,8 @@
 	let { pageTitle } = $props();
 </script>
 
-<h1>{pageTitle}</h1>
-<a href="/"><i class="bi bi-arrow-left-circle-fill"></i> {$t('specialMsg.goBack')}</a>
+<div class="pt-[var(--spacing-x-large)]">
+	<h1>{pageTitle}</h1>
+	<a href="/" class="hover:text-[var(--color-text)] no-underline"><i class="bi bi-arrow-left-circle-fill"></i> {$t('specialMsg.goBack')}</a>
+</div>
 
-<style>
-	@reference 'tailwindcss';
-
-	a {
-		@apply hover:text-(--color-text) no-underline;
-	}
-</style>

@@ -3,18 +3,6 @@
 @import '$lib/assets/styles/fonts.css';
 @import '$lib/assets/styles/vars.css';
 
-body {
-	@apply bg-(--color-background);
-}
-
-main {
-	@apply p-(--spacing-medium) pt-(--spacing-x-large) ml-auto mr-auto max-w-[1000px];
-}
-
-footer {
-	@apply pl-(--spacing-medium) pr-(--spacing-medium) pb-(--spacing-large) ml-auto mr-auto max-w-[1000px];
-}
-
 /* Global Text Elements */
 
 body h1,
@@ -23,19 +11,19 @@ body h3,
 body h4,
 body h5,
 body h6 {
-	@apply text-(--color-highlight) font-bold font-['Inter'];
+	@apply text-[var(--color-highlight)] font-bold font-['Inter'];
 }
 
 body h1,
 body h2 {
-	@apply mt-(--spacing-large) mb-(--spacing-medium);
+	@apply mt-[var(--spacing-large)] mb-[var(--spacing-medium)];
 }
 
 body h3,
 body h4,
 body h5,
 body h6 {
-	@apply mt-(--spacing-medium) mb-(--spacing-medium);
+	@apply mt-[var(--spacing-medium)] mb-[var(--spacing-medium)];
 }
 
 body h1 {
@@ -53,25 +41,25 @@ body h3 {
 body p,
 body span,
 body li {
-	@apply text-(--color-text) font-['Inter'];
+	@apply text-[var(--color-text)] font-['Inter'];
 }
 
 body p {
-	@apply mt-(--spacing-medium) mb-(--spacing-medium);
+	@apply mt-[var(--spacing-medium)] mb-[var(--spacing-medium)];
 }
 
 body a {
-	@apply text-(--color-highlight) underline hover:no-underline;
+	@apply text-[var(--color-highlight)] underline hover:no-underline;
 }
 
 body button {
-	@apply text-(--color-highlight);
+	@apply text-[var(--color-highlight)];
 }
 
 body strong {
-	@apply text-(--color-highlight) font-bold;
+	@apply text-[var(--color-highlight)] font-bold;
 }
 
 body ul li {
-	@apply ml-(--spacing-large) list-disc;
+	@apply ml-[var(--spacing-large)] list-disc;
 }

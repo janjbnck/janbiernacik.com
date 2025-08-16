@@ -18,10 +18,10 @@
 	<Navbar />
 </header>
 
-<main>
+<main class="px-[var(--spacing-medium)] ml-auto mr-auto max-w-[1000px]">
 	{@render children?.()}
 </main>
 
-<footer>
+<footer class="px-[var(--spacing-medium)] pb-[var(--spacing-x-large)] mx-auto max-w-[1000px]">
 	<Footer />
 </footer>

@@ -2,30 +2,12 @@
 	import { langSwitch } from '../scripts/langSwitch';
 </script>
 
-<nav id="navbar">
-	<div id="navbar-items-left"></div>
-	<div id="navbar-items-center"></div>
-	<div id="navbar-items-right">
+<nav class="h-[var(--spacing-x-large)] bg-[var(--color-background-transparent)] backdrop-blur-[var(--radius-blur)] fixed top-0 flex w-full items-center justify-between z-[999]">
+	<div class="ml-[var(--spacing-medium)]"></div>
+	<div></div>
+	<div class="mr-[var(--spacing-medium)] [&>*]:ml-[var(--spacing-medium)] [&>*]:cursor-pointer [&>*]:text-xl [&>*]:hover:text-[var(--color-text)]! [&>*]:transition-all">
 		<button class="navbar-link" aria-label="de" onclick={langSwitch}
 		><i class="bi bi-globe"></i>
 		</button>
 	</div>
 </nav>
-
-<style>
-	@reference 'tailwindcss';
-
-	#navbar {
-		@apply h-(--spacing-x-large) bg-(--color-background-transparent) backdrop-blur-(--radius-blur) fixed top-[0] flex w-full items-center justify-between;
-	}
-	#navbar-items-right {
-		@apply mr-(--spacing-medium);
-	}
-	#navbar-items-right .navbar-link {
-		@apply ml-(--spacing-small);
-	}
-
-	.navbar-link {
-		@apply cursor-pointer text-xl hover:text-(--color-text) transition-all;
-	}
-</style>
