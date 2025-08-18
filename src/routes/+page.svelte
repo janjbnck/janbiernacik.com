@@ -12,4 +12,4 @@ import { t } from 'svelte-i18n';
 
 <Banner />
 
-<p class="text-xl max-md:text-lg">{@html $t('home.aboutMe')}</p>
+<p>{@html $t('home.aboutMe')}</p>
