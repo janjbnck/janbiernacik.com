@@ -92,6 +92,7 @@
 	},
 	"specialMsg": {
 		"goBack": "Zurück",
-		"underConstruction": "Diese Webseite befindet sich noch im Aufbau."
+		"underConstruction": "Diese Webseite befindet sich noch im Aufbau.",
+		"errorOccurred": "Es ist ein Fehler aufgetreten"
 	}
 }

@@ -92,6 +92,7 @@
 	},
 	"specialMsg": {
 		"goBack": "Go Back",
-		"underConstruction": "This website is still under construction."
+		"underConstruction": "This website is still under construction.",
+		"errorOccurred": "An error has occurred"
 	}
 }
