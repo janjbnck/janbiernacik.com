@@ -3,7 +3,7 @@
 
 	import Footer from '$lib/assets/components/Footer.svelte';
 	import Navbar from '$lib/assets/components/Navbar.svelte';
-	import { getLangPref, hasLangPref } from '$lib/assets/scripts/langPref';
+	import { getLangPref } from '$lib/assets/scripts/langPref';
 	import { locale } from 'svelte-i18n';
 	import { onMount } from 'svelte';
 
